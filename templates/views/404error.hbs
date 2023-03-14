@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{>headerlinks}}
+  </head>
+  <body>
+
+ {{>navbar}}
+
+    <!-- main header -->
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-12 col-12 main_header_left align-items-center">
+                <figure class="errimg">
+                    <img
+                    src="images/error.png"
+                    alt="umar"
+                    class="img-fluid"
+                    title="umar weather" />
+                    
+                </figure>
+            
+           
+              <p>Umar's weather app</p>
+              <h1>
+               {{errormsg}}
+               {{!-- it is like props in react we pass --}}
+              </h1>
+              <a href="/"><button>Go Back</button></a>
+            
+            <!-- right side div -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+   {{>footer}}
+
+
+   <script src="js/main.js"></script>
+  </body>
+
+
+</html>
